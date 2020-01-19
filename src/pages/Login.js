@@ -13,26 +13,25 @@ import {
 import {Actions} from 'react-native-router-flux';
 
 import Logo from '../components/Logo';
-import Form from '../components/Form';
+import LogInForm from '../components/LogInForm';
 
 class Login extends Component {
-
 
 
     render() {
         return (
             <View style={styles.container}>
                 <Logo/>
-                <Form type="Login" />
+                <LogInForm type="Login"/>
                 <View style={styles.signupTextCont}>
-                    <Text style={styles.signupText}> {"   "}Noch keinen Account? </Text>
+                    <Text style={styles.signupText}> {'   '}Noch keinen Account? </Text>
                     <TouchableOpacity>
-                    <Text style={styles.signupButton}>Registrieren</Text>
+                        <Text style={styles.signupButton}>Registrieren</Text>
                     </TouchableOpacity>
                     <View style={styles.hilfeTextCont}>
                         <Text style={styles.hilfeText}>Brauchst du Hilfe?</Text>
                         <TouchableOpacity>
-                        <Text style={styles.hilfeButton}> Hilfe</Text>
+                            <Text style={styles.hilfeButton}> Hilfe</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -55,7 +54,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 30,
         flexDirection: 'row',
-        marginVertical:-30,
+        marginVertical: -30,
 
     },
     signupText: {
@@ -80,11 +79,11 @@ const styles = StyleSheet.create({
         color: '#000000',
         fontSize: 12,
     },
-    hilfeButton:{
+    hilfeButton: {
         color: '#000000',
         fontSize: 12,
         fontWeight: '700',
-    }
+    },
 });
 
 export default Login;

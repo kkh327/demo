@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 
-class Form2 extends Component {
+class SignUpForm extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <TextInput style={styles.inputBox}
-                           placeholder={" Email Adresse"}
+                           placeholder={' Email Adresse'}
                            placeholderTextColor="#DCDCDC"
                            keyboardType="email-address"
 
@@ -18,6 +18,7 @@ class Form2 extends Component {
         );
     }
 }
+
 const styles = StyleSheet.create({
     container: {
         flexGrow: 1,
@@ -34,21 +35,21 @@ const styles = StyleSheet.create({
         color: '#000000',
         marginVertical: 6,
     },
-    button:{
-        width:150,
+    button: {
+        width: 150,
         backgroundColor: '#2F4F4F',
         borderRadius: 5,
-        marginVertical:23,
-        paddingVertical:6,
+        marginVertical: 23,
+        paddingVertical: 6,
     },
 
-    buttonText:{
-        fontSize:16,
-        fontWeight:'500',
-        color:"#DCDCDC",
-        textAlign:"center",
-    }
+    buttonText: {
+        fontSize: 16,
+        fontWeight: '500',
+        color: '#DCDCDC',
+        textAlign: 'center',
+    },
 
 });
 
-export default Form2;
+export default SignUpForm;

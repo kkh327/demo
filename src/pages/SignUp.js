@@ -12,7 +12,7 @@ import {
 import {Actions } from 'react-native-router-flux';
 
 import Logo from '../components/Logo';
-import Form2 from '../components/Form2';
+import SignUpForm from '../components/SignUpForm';
 
 class SignUp extends Component {
 
@@ -22,7 +22,7 @@ class SignUp extends Component {
         return (
             <View>
                 <Logo/>
-                <Form2 type="Registrieren"/>
+                <SignUpForm type="Registrieren"/>
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Schon ein Account? </Text>
                     <TouchableOpacity >
