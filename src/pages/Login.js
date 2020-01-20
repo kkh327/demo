@@ -17,6 +17,9 @@ import LogInForm from '../components/LogInForm';
 
 class Login extends Component {
 
+    signup() {
+        Actions.signup();
+    }
 
     render() {
         return (
@@ -25,7 +28,7 @@ class Login extends Component {
                 <LogInForm type="Login"/>
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}> {'   '}Noch keinen Account? </Text>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={this.signup}>
                         <Text style={styles.signupButton}>Registrieren</Text>
                     </TouchableOpacity>
                     <View style={styles.hilfeTextCont}>

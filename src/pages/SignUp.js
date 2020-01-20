@@ -9,31 +9,32 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import {Actions } from 'react-native-router-flux';
+import {Actions} from 'react-native-router-flux';
 
 import Logo from '../components/Logo';
 import SignUpForm from '../components/SignUpForm';
 
 class SignUp extends Component {
 
-
+    goBack() {
+    Actions.pop();
+    }
 
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <Logo/>
                 <SignUpForm type="Registrieren"/>
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Schon ein Account? </Text>
-                    <TouchableOpacity >
-                    <Text style={styles.signupButton}>Einloggen</Text>
+                    <TouchableOpacity onPress={this.goBack}>
+                        <Text style={styles.signupButton}>Einloggen</Text>
                     </TouchableOpacity>
                 </View>
             </View>
         );
     }
 }
-
 
 
 const styles = StyleSheet.create({
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 30,
         flexDirection: 'row',
-        marginVertical:-30,
+        marginVertical: -30,
 
     },
     signupText: {
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
         color: '#000000',
         fontSize: 13,
         fontWeight: '700',
-    }
+    },
 
 });
 

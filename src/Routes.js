@@ -8,9 +8,9 @@ class Routes extends Component {
     render() {
         return (
             <Router>
-                <Stack key="root">
-                    <Scene key="login" component={Login} title="Login"/>
-                    <Scene key="register" component={SignUp} title="SignUp"/>
+                <Stack key="root" hideNavBar={true}>
+                    <Scene key="login" component={Login} title="Login" initial={true}/>
+                    <Scene key="signup" component={SignUp} title="SignUp" />
                 </Stack>
             </Router>
         );

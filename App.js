@@ -18,6 +18,7 @@ import {
 
 import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
+import Routes from './src/Routes';
 
 
 
@@ -30,7 +31,7 @@ export default class App extends Component<{}> {
                     backgroundcolor="#F0FFFF"
                     barStyle="light-content"
                 />
-            <Login/>
+            <Routes/>
             </View>
         );
     }
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#FFFFFF',
-        alignItems: 'center',
+       //alignItems: 'center',
         justifyContent: 'center',
     },
 });
