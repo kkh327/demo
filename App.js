@@ -15,6 +15,8 @@ import {
     Text,
 } from 'react-native';
 
+import {Provider} from "react-redux";
+import store from "./src/config/store";
 
 import Login from './src/pages/Login';
 import SignUp from './src/pages/SignUp';
@@ -26,6 +28,7 @@ import Routes from './src/Routes';
 export default class App extends Component<{}> {
     render() {
         return (
+            <Provider store={store}>
             <View style={styles.container}>
                 <StatusBar
                     backgroundcolor="#F0FFFF"
@@ -33,6 +36,7 @@ export default class App extends Component<{}> {
                 />
             <Routes/>
             </View>
+            </Provider>
         );
     }
 }
