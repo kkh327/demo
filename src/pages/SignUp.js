@@ -17,14 +17,18 @@ import SignUpForm from '../components/SignUpForm';
 class SignUp extends Component {
 
     goBack() {
-    Actions.pop();
+        Actions.pop();
     }
+
+    createNewUser = () => {
+        alert("boom");
+    };
 
     render() {
         return (
             <View style={styles.container}>
                 <Logo/>
-                <SignUpForm type="Registrieren"/>
+                <SignUpForm type="Registrieren" onAuthButtonpress={this.createNewUser}/>
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Schon ein Account? </Text>
                     <TouchableOpacity onPress={this.goBack}>
