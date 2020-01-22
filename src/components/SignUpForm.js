@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         fontSize: 20,
         color: '#000000',
-        marginVertical: 6,
+        marginVertical: 16,
     },
     button: {
-        width: 150,
+        width: 160,
         backgroundColor: '#2F4F4F',
         borderRadius: 15,
         marginVertical: 23,

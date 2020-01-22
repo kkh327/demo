@@ -19,9 +19,6 @@ import {Provider} from 'react-redux';
 import persist from './src/config/store';
 
 import {PersistGate} from 'redux-persist/integration/react';
-import Login from './src/pages/Login';
-import SignUp from './src/pages/SignUp';
-import Routes from './src/components/Routes';
 import Main from './src/Main';
 import store from './src/config/store';
 

@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 
 import {connect} from 'react-redux';
-import {Actions} from 'react-native-router-flux';
 
+import {Actions} from 'react-native-router-flux';
 import Routes from './components/Routes';
 
 
@@ -32,9 +32,9 @@ class Main extends Component {
 
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
+     container: {
+        flex: 1
+    }
 
 });
 
