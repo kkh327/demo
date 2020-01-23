@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
         width:350,
         backgroundColor:'green',
         borderRadius: 35,
-        paddingHorizontal:16,
-        paddingVertical:12,
+        paddingHorizontal:18,
+        paddingVertical:9,
         fontSize:20,
         color:'#ffffff',
-        marginVertical: 16
+        marginVertical: 10
     }
 });
     class InputText extends Component<{}> {
