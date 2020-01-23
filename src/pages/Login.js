@@ -122,6 +122,7 @@ class Login extends Component {
                 <Logo/>
                 <Field
                     name="id"
+                    maxLength={7}
                     placeholder="ID Nummer"
                     keyboardType="numeric"
                     component={this.renderTextInput}

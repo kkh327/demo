@@ -1,3 +1,6 @@
+/**
+ * @deprecated Komponente wird nicht mehr benötigt wird von redux ersetzt
+ */
 import React, {Component} from 'react';
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 

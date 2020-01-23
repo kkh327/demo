@@ -129,6 +129,12 @@ const validate = (values) => {
      if(!values.email){
          errors.email="Gültige Email ist notwendig"
      }
+     else if(!values.email.includes("@")){
+         errors.email="Gültige Email ist notwendig"
+     }
+     else if(!values.email.includes(".")){
+         errors.email="Gültige Email ist notwendig"
+     }
     return errors;
 };
 export default reduxForm({

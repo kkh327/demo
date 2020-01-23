@@ -1,3 +1,8 @@
+/**
+ *@deprecated Komponente wird nicht mehr gebraucht redux ersetzt diese!!!
+ */
+
+
 import React, {Component} from 'react';
 
 import {
@@ -9,6 +14,7 @@ import {
     TextInput,
     TouchableOpacity,
 } from 'react-native';
+
 
 class LogInForm extends Component {
 
@@ -40,7 +46,7 @@ class LogInForm extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flexGrow: 1,
+        flexGrow: 2,
         alignItems: 'center',
         justifyContent: 'center',
     },
