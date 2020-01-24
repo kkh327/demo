@@ -126,13 +126,11 @@ class SignUp extends Component {
 
 const validate = (values) => {
     const errors = {};
+
      if(!values.email){
          errors.email="Gültige Email ist notwendig"
      }
-     else if(!values.email.includes("@")){
-         errors.email="Gültige Email ist notwendig"
-     }
-     else if(!values.email.includes(".")){
+     else if(!values.email.includes('@uni-bremen.de')){
          errors.email="Gültige Email ist notwendig"
      }
     return errors;
