@@ -1,3 +1,8 @@
+/**
+ *@deprecated Komponente wird nicht mehr gebraucht redux ersetzt diese!!!
+ */
+
+
 import React, {Component} from 'react';
 
 import {
@@ -10,6 +15,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
+
 class LogInForm extends Component {
 
 
@@ -20,11 +26,15 @@ class LogInForm extends Component {
                            placeholder={' ID Nummer '}
                            placeholderTextColor="#DCDCDC"
                            selectionColor="#ffffff"
+                           onSubmitEditing={()=> this.password.focus()}
+                           maxLength={7}
+                           keyboardType="numeric"
                 />
                 <TextInput style={styles.inputBox}
                            placeholder={' Passwort'}
                            placeholderTextColor="#DCDCDC"
                            secureTextEntry={true}
+                           ref={(input)=>this.password=input}
                 />
                 <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttonText}>{this.props.type}  </Text>
@@ -36,7 +46,7 @@ class LogInForm extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flexGrow: 1,
+        flexGrow: 2,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -53,7 +63,7 @@ const styles = StyleSheet.create({
     button: {
         width: 150,
         backgroundColor: '#2F4F4F',
-        borderRadius: 5,
+        borderRadius: 15,
         marginVertical: 23,
         paddingVertical: 6,
     },

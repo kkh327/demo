@@ -2,6 +2,7 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
+ * jjd
  * @format
  * @flow
  */
@@ -15,36 +16,28 @@ import {
     Text,
 } from 'react-native';
 
+import {Provider} from 'react-redux';
+import persist from './src/config/store';
 
-import Login from './src/pages/Login';
-import SignUp from './src/pages/SignUp';
-import Routes from './src/Routes';
+import {PersistGate} from 'redux-persist/integration/react';
+import Main from './src/Main';
+import store from './src/config/store';
 
-
-
+const persistStore=persist();
 
 export default class App extends Component<{}> {
     render() {
         return (
-            <View style={styles.container}>
-                <StatusBar
-                    backgroundcolor="#F0FFFF"
-                    barStyle="light-content"
-                />
-            <Routes/>
-            </View>
+            <Provider store={persistStore.store}>
+                <PersistGate loading={null} persistor={persistStore.persistor}>
+                    <Main/>
+                </PersistGate>
+            </Provider>
         );
     }
 }
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#FFFFFF',
-       //alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
+
 
 

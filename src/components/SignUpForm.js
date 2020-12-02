@@ -1,3 +1,6 @@
+/**
+ * @deprecated Komponente wird nicht mehr benötigt wird von redux ersetzt
+ */
 import React, {Component} from 'react';
 import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 
@@ -33,12 +36,12 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         fontSize: 20,
         color: '#000000',
-        marginVertical: 6,
+        marginVertical: 16,
     },
     button: {
-        width: 150,
+        width: 160,
         backgroundColor: '#2F4F4F',
-        borderRadius: 5,
+        borderRadius: 15,
         marginVertical: 23,
         paddingVertical: 6,
     },
