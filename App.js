@@ -1,4 +1,5 @@
 /**
+ * jsj
  * Sample React Native App
  * https://github.com/facebook/react-native
  * test test
