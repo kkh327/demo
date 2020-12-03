@@ -3,7 +3,6 @@
  * https://github.com/facebook/react-native
  * @format
  * o@flow
- * jdj
  */
 //jetzt sollte endgültig rebase gehen
 
