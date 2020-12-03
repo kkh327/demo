@@ -4,7 +4,6 @@
  * @format
  * o@flow
  */
-//jetzt sollte endgültig rebase gehen
 
 import React, {Component} from 'react';
 import {
