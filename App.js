@@ -2,7 +2,7 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  * @format
- * @flow
+ * o@flow
  */
 //jetzt sollte endgültig rebase gehen
 
