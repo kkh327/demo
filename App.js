@@ -4,7 +4,6 @@
  * @format
  * o@flow
  */
-//  fef
 import React, {Component} from 'react';
 import {
     Platform,
